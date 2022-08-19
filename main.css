@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.groceryList {
+    width: 45%
+}
+
+.groceryItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+.groceryItem h3, .groceryItem h2 {
+    width: 20%;
+}
+
+.quantity {
+    max-width: 10%;
+}
+
+.groceryItem img {
+    width: 5vw;
+}
+
+.legend {
+    margin-left: -2.7vw;
+    display: flex;
+    justify-content: center;
+}
+
+.legend h2 {
+    margin: 0 3vw;
+}
+
