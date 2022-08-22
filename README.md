@@ -41,10 +41,12 @@ STRETCH GOALS
 - [x] change the 'remove' button's functionality to actually remove the item from the list
 - [x] add a 'later' button that toggles the CSS (gray text, strikeout etc.) if the item should be purchased later
 - [x] expand your app to allow for images (the images should be an http URL ) and then render the image in your app - some images may take longer to load and not appear correctly, look into react life cycle events and/or lazy loading (if that is too much just keep trying images, some will work and save lifecycles/lazy loading for later)
-- [] Make multiple grocery lists (one for each family member) and have them update independently
+- [ ] Make multiple grocery lists (one for each family member) and have them update independently
 sort your list alphabetically
-- [] create other ways to sort your data (i.e. by quantity)
+- [ ] create other ways to sort your data (i.e. by quantity)
 
 ## Final Submission 
 
 ![submission](/images/react-groceries.jpg)
+
+* NOTE: The Sprite soda item was submitted through the form
