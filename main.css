@@ -1,42 +1,144 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+
+* { 
     box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+html, body {
     margin: 0;
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(#141e30, #243b55);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+p, h1, h2, h3, h4, h5, h6, label, th, td {
+    margin: 0;
+    color: rgb(231, 231, 231);
+}
+.groceryContainer {
+    display: flex;
+    padding-top: 10vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    height: 10vh;
+    width: auto;
+}
+
+.user-box {
+    position: relative;
+}
+
+.user-box input {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent
+}
+
+.user-box label {
+    position: absolute;
+    top:1vh;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
 }
 
 .groceryList {
-    width: 45%
+    margin-left: 5vw;
 }
 
-.groceryItem {
+.groceryList {
+    width: 45%;
+}
+
+.newItem label {
+    font-size: 0.8rem;
+    margin-top: 0.6vh;
+}
+
+.newItem {
+    width: 15%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    width: 100%;
-    border-bottom: 1px solid black;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    background: rgba(0,0,0,.5);
+    border-radius: 10px;
+    padding: 3vh 0;
 }
 
-.groceryItem h3, .groceryItem h2 {
-    width: 20%;
+.newItem h3 {
+    margin-bottom: 2vh;
 }
 
-.quantity {
-    max-width: 10%;
+table {
+    padding: 2.5vh 1vw;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    background: rgba(0,0,0,.5);
+    border-radius: 10px;
 }
 
-.groceryItem img {
-    width: 5vw;
+table img{
+    width: 4vw;
+    border: 5px solid rgba(128, 159, 214, 0.5);
 }
 
-.legend {
-    margin-left: -2.7vw;
-    display: flex;
-    justify-content: center;
+td, th {
+    width: 20vw;
+    text-align: center;
 }
 
-.legend h2 {
-    margin: 0 3vw;
+th {
+    font-size: 1.25rem;
 }
 
+thead {
+    height: 8vh;
+}
+
+td {
+    font-size: 0.8rem
+}
+
+.removeButton {
+    background: linear-gradient(0deg, rgba(233,58,58,1) 35%, rgba(237,71,108,1) 98%);
+    color: white;
+    border: 0.5px solid red;
+    border-radius: 10px;
+}
+
+.laterButton {
+    background: linear-gradient(90deg, rgba(89,131,255,1) 0%, rgba(109,102,255,1) 100%);
+    color: white;
+    border: 0.5px solid rgb(36, 36, 77);
+    border-radius: 10px;
+}
+
+.text {
+    text-decoration: none;
+}
+
+.strike {
+    text-decoration: line-through;
+    color: gray;
+}
